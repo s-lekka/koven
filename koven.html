@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Koven</title>
+        <meta charset="utf-8">
+        <meta name=author content="3090108">
+        <meta name="viewport" content="width=400px, height=800px">
+        <meta name="Description" content="oven and hobs interface for touchscreens">
+        <script  src="./script.js"></script>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+    <body>
+        <header>
+            <p>Koven</p>
+        </header>
+        <main>
+            <div id="main-tab" tabindex="1" >
+                <div id="hobs-part">
+                    <div id="top" class="hobs">
+                        <button type="button" id="tlHob-button" class="top left hob" title="Top left hob temp and settings">0</button>
+                        <button type="button" id="trHob-button" class=" top right hob" title="Top right hob temp and settings">0</button>
+                    </div>
+                    <div id="bottom" class="hobs">
+                        <button type="button" id="blHob-button" class="bottom left hob" title="Bottom left hob temp and settings">0</button>
+                        <button type="button" id="brHob-button" class="bottom right hob" title="Bottom right hob temp and settings">0</button>
+                    </div>
+                </div>
+                <div id="oven-part">
+                    <button type="button" id="oven-button" class="oven" title="Oven temp, timer and settings">000<br>mode_img<br>00:00</button>
+                </div>
+            </div>
+            <div id="hob-tab" tabindex="2" class="screens">
+                <button type="button" id="hob-level" class="hearing">0</button>
+                <div id="value-buttons">
+                    <button type="button" id="hob-lvl-down" class="value-button">-</button>
+                    <button type="button" id="hob-lvl-up" class="value-button">+</button>
+                </div>
+                <div id="decision-buttons">
+                    <button type="button" id="off-hob" class="decision-button, off">OFF</button>
+                    <button type="button" id="on-hob" class="decision-button, on">ON</button>
+                </div>
+            </div>
+            <div id="oven-tab" tabindex="3" class="screens">
+                <button type="button" id="oven-temp" class="hearing">0</button>
+                <button type="button" id="oven-timer" class="hearing">00<br>00</button>
+                <button type="button" id="oven-mode" class="select"><img src="./icons/fan-only.png"></button>
+                <div id="numpad">
+                    <button type="button" id="numpad1" class="numpad">1</button>
+                    <button type="button" id="numpad2" class="numpad">2</button>
+                    <button type="button" id="numpad3" class="numpad">3</button>
+                    <button type="button" id="numpad4" class="numpad">4</button>
+                    <button type="button" id="numpad5" class="numpad">5</button>
+                    <button type="button" id="numpad6" class="numpad">6</button>
+                    <button type="button" id="numpad7" class="numpad">7</button>
+                    <button type="button" id="numpad8" class="numpad">8</button>
+                    <button type="button" id="numpad9" class="numpad">9</button>
+                    <button type="button" id="numpadC" class="numpad">C</button>
+                    <button type="button" id="numpad0" class="numpad">0</button>
+                </div>
+                <button type="button" id="off-oven" class="decision-button, off">OFF</button>
+                <button type="button" id="on-oven" class="decision-button, on">ON</button>
+            </div>
+            <div id="oven-mode-tab" tabindex="4" class="screens">
+                <button type="button" id="mode-select" class="select"><img src="./icons/fan-only.png"></button>
+                <div id="oven-modes">
+                    <button type="button" id="fan" class="hearing"><img src="./icons/fan-only.png" alt="fan mode"></button>
+                    <button type="button" id="l-heat" class="hearing"><img src="./icons/lower-heat.png" alt="lower heat mode"></button>
+                    <button type="button" id="l-heat-fan" class="hearing"><img src="./icons/fan-lower-heat.png" alt="lower heat with fan mode"></button>
+                    <button type="button" id="lu-heat" class="hearing"><img src="./icons/upper-lower-heat.png" alt="lower and upper heat mode"></button>
+                </div>
+            </div>
+            <div id="timer-tab" tabindex="5" class="screens">
+                <textarea id="timer-hours" class="hearing">{{th}}</textarea>
+                <img src="./icons/colon.png" alt="colon icon">
+                <textarea id="timer-minutes" class="hearing">{{tm}}</textarea>
+                <br>
+                <button type="button" id="hours-up" class="value-button">+</button>
+                <button type="button" id="hours-down" class="value-button">-</button>
+                <button type="button" id="minutes-up" class="value-button">+</button>
+                <button type="button" id="minutes-down" class="value-button">-</button>
+                <br>
+                <button type="button" id="off-timer" class="decision-button, off">OFF</button>
+                <button type="button" id="on-timer" class="decision-button, on">ON</button>
+            </div>
+
+            <div id="message"></div>
+        </main>
+</html>

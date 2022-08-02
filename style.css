@@ -1,0 +1,230 @@
+body {
+    background-color:darkslategrey;
+}
+
+header {
+    background-color: black;
+    color: aliceblue;
+}
+
+main {
+    margin: 10px
+}
+
+#main-tab {
+    display: block;
+}
+
+.screens {
+    display: block;
+}
+
+.hob {
+    border: 1px solid white;
+    background-color:black;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    text-decoration-color: black;
+    font-size: 60px;
+    display: inline;
+}
+
+.decision-button {
+    border: 1px solid white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: inline;
+}
+
+.off {
+    border: 1px solid white;
+    color: white;
+    font-size: 50px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: inline;
+    background-color: darkred;
+}
+
+.on {
+    border: 1px solid white;
+    color: white;
+    font-size: 50px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: inline;
+    background-color: green;
+}
+
+#on-oven {
+    width: 120px;
+    height: 90px;
+    border-radius: 0 45% 45% 0;
+}
+
+#off-oven {
+    width: 120px;
+    height: 90px;
+    border-radius: 45% 0 0 45%;
+}
+
+#oven-button {
+    border: 1px solid white;
+    color:black;
+    font-size: 60px;
+    width: 300px;
+    height: 250px;
+    margin-left: 50px;
+    margin-top: 25px;
+    border-radius: 30%;
+    display: inline;
+    background-color: black;
+}
+
+#value-buttons {
+    display: flex;
+    width: 350px;
+    height: 150px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#decision-buttons {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+}
+
+.value-button{
+    border: 1px solid black;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    display: inline;
+    background-color: black;
+}
+
+.numpad {
+    border: 1px solid black;
+    color: white;
+    width: 75px;
+    height: 75px;
+    margin: 5px;
+    font-size: 50px;
+    border-radius: 10%;
+    display: inline;
+    background-color: black;    
+}
+
+#numpad {
+    width:260px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: space-around;
+    flex-direction: row;
+}
+
+#oven-timer {
+    width: 75px;
+    height: 150px;
+    border-radius: 30px;
+    font-size: 50px;
+}
+
+.hearing {
+    border: 1px solid black;
+    color: black;
+    background-color: aqua;
+}
+
+#hob-level {
+    font-size: 100px;
+    width: 200px;
+    height: 150px;
+    margin: 70px;
+    margin-bottom: 20px;
+}
+
+#oven-temp {
+    font-size: 100px;
+    width: 250px;
+    height: 150px;
+}
+
+#hobs-part {
+    display: flexbox;
+}
+
+.hobs .left {
+    margin-left: 50px;
+}
+
+.hobs .right {
+    margin-left: 25px;
+}
+
+.hobs .top {
+    margin-bottom: 25px;
+}
+
+#oven-timer {
+    display: none;
+}
+
+img {
+    width:80px;
+    height:80px;
+    border: 2px black;
+}
+
+#oven-mode-tab .select img {
+    width:190px;
+    height:190px;
+}
+
+#oven-modes {
+    width:200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#oven-modes .hearing {
+    width:fit-content;
+    height:fit-content;
+    padding: 5px;
+}
+
+#mode-select {
+    width: 210px;
+    height: 210px;
+    margin-bottom: 20px;
+    background-color: orange;
+    align-items: center;
+}
+
+#message {
+    visibility: hidden;
+}
+
+
+
+
+
+
+

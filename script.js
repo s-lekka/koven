@@ -375,7 +375,7 @@ function updateMode(evt){
             oven.mode = 'upper-lower-heat';
             break;
     }
-    select.innerHTML = '<img src="./icons/'+oven.mode+'.png">'
+    select.innerHTML = '<img src="/icons/'+oven.mode+'.png">'
 }
 
 function setMode(evt) {
@@ -384,7 +384,7 @@ function setMode(evt) {
     document.getElementById('oven-mode-tab').style.display = 'none'
     document.getElementById('oven-tab').style.display = 'block'
 
-    document.getElementById('oven-mode').innerHTML = '<img src="./icons/'+oven.mode+'.png">' 
+    document.getElementById('oven-mode').innerHTML = '<img src="/icons/'+oven.mode+'.png">' 
 }
 
 function updateView() {
@@ -423,7 +423,7 @@ function updateView() {
     }
 
     if (oven.temp!=0) {
-        ovnButton.innerHTML = oven.temp + ' °C<br><img src="./icons/' + oven.mode +'.png">'
+        ovnButton.innerHTML = oven.temp + ' °C<br><img src="/icons/' + oven.mode +'.png">'
         ovnButton.style.backgroundColor = 'orangered'
     }
     else {

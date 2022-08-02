@@ -3,11 +3,11 @@
     <head>
         <title>Koven</title>
         <meta charset="utf-8">
-        <meta name=author content="3090108">
+        <meta name=author content="Stavroula Lekka">
         <meta name="viewport" content="width=400px, height=800px">
         <meta name="Description" content="oven and hobs interface for touchscreens">
-        <script  src="./script.js"></script>
-        <link rel="stylesheet" type="text/css" href="./style.css">
+        <script  src="/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="/style.css">
     </head>
     <body>
         <header>
@@ -43,7 +43,7 @@
             <div id="oven-tab" tabindex="3" class="screens">
                 <button type="button" id="oven-temp" class="hearing">0</button>
                 <button type="button" id="oven-timer" class="hearing">00<br>00</button>
-                <button type="button" id="oven-mode" class="select"><img src="./icons/fan-only.png"></button>
+                <button type="button" id="oven-mode" class="select"><img src="/icons/fan-only.png"></button>
                 <div id="numpad">
                     <button type="button" id="numpad1" class="numpad">1</button>
                     <button type="button" id="numpad2" class="numpad">2</button>
@@ -61,17 +61,17 @@
                 <button type="button" id="on-oven" class="decision-button, on">ON</button>
             </div>
             <div id="oven-mode-tab" tabindex="4" class="screens">
-                <button type="button" id="mode-select" class="select"><img src="./icons/fan-only.png"></button>
+                <button type="button" id="mode-select" class="select"><img src="/icons/fan-only.png"></button>
                 <div id="oven-modes">
-                    <button type="button" id="fan" class="hearing"><img src="./icons/fan-only.png" alt="fan mode"></button>
-                    <button type="button" id="l-heat" class="hearing"><img src="./icons/lower-heat.png" alt="lower heat mode"></button>
-                    <button type="button" id="l-heat-fan" class="hearing"><img src="./icons/fan-lower-heat.png" alt="lower heat with fan mode"></button>
-                    <button type="button" id="lu-heat" class="hearing"><img src="./icons/upper-lower-heat.png" alt="lower and upper heat mode"></button>
+                    <button type="button" id="fan" class="hearing"><img src="/icons/fan-only.png" alt="fan mode"></button>
+                    <button type="button" id="l-heat" class="hearing"><img src="/icons/lower-heat.png" alt="lower heat mode"></button>
+                    <button type="button" id="l-heat-fan" class="hearing"><img src="/icons/fan-lower-heat.png" alt="lower heat with fan mode"></button>
+                    <button type="button" id="lu-heat" class="hearing"><img src="/icons/upper-lower-heat.png" alt="lower and upper heat mode"></button>
                 </div>
             </div>
             <div id="timer-tab" tabindex="5" class="screens">
                 <textarea id="timer-hours" class="hearing">{{th}}</textarea>
-                <img src="./icons/colon.png" alt="colon icon">
+                <img src="/icons/colon.png" alt="colon icon">
                 <textarea id="timer-minutes" class="hearing">{{tm}}</textarea>
                 <br>
                 <button type="button" id="hours-up" class="value-button">+</button>
